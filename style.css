@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: calc(100vh - 40px);
+  font-size: 1.6rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 33%;
+  height: 95%;
+  margin: 30px auto;
+  border: 1px solid #dbdbdb88;
+  border-radius: 12px;
+  background-color: #e4e2e2;
+  box-shadow: 20px 20px 60px #c8c8c8, -20px -20px 60px #ffffff;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head div {
+  margin: 25px;
+  padding: 25px;
+  border-radius: 7px;
+  background: #e0e0e0;
+  box-shadow: inset 7px 7px 14px #cccccc, inset -7px -7px 14px #f4f4f4;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 2rem 0;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #6c6d6eda;
+}
+
+i {
+  font-size: 3rem;
+  transition: 1s;
+}
+
+.search i {
+  color: #313131;
+}
+
+.switch i {
+  color: #f4827e;
+}
+
+.search:hover i {
+  transform: scale(1.15) rotate(45deg);
+  color: #ff0077;
+  cursor: pointer;
+}
+
+.switch:hover i {
+  transform: scale(1.15);
+  color: #ff0077;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main_image img {
+  display: block;
+  width: 35rem;
+  height: 35rem;
+  object-fit: cover;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: #c9c9c9;
+  box-shadow: -5px 5px 10px #656565, 5px -5px 10px #ffffff;
+}
+
+meter {
+  width: 45rem;
+  height: 2.4rem;
+  border-radius: 8px;
+  outline: none;
+  margin: 2rem 0;
+}
+
+meter::-webkit-meter-optimum-value {
+  background-image: linear-gradient(to right, #86cbf3, #198ed4, #52e4f1);
+}
+
+.buttons {
+  width: 45rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons div {
+  color: #4b4a4a;
+  padding: 1.6rem;
+  border-radius: 23px;
+  background: #e0e0e0;
+  box-shadow: -5px 5px 10px #d0d0d0, 5px -5px 10px #f0f0f0;
+}
+
+.buttons div:nth-child(2) {
+  color: #18e3f1;
+  border-radius: 23px;
+  background: #e0e0e0;
+  box-shadow: inset -5px 5px 10px #d0d0d0, inset 5px -5px 10px #f0f0f0;
+}
+
+.buttons i {
+  font-size: 4rem;
+}
+
+.buttons div:hover i {
+  transform: scale(1.15);
+  color: #ff0077;
+  cursor: pointer;
+}
+
+hr {
+  height: 8px;
+  width: 50%;
+  margin: 4rem auto;
+  border: none;
+  border-radius: 4px;
+  background: #e0e0e0;
+  box-shadow: inset -2px 2px 4px #727272, inset 2px -2px 4px #ffffff;
+}
+
+@media screen and (max-width: 600px) {
+  .player {
+    max-width: 100%;
+    height: 100vh;
+    margin: 0;
+    box-shadow: none;
+  }
+  .main_image img {
+    width: 20rem;
+    height: 20rem;
+  }
+  meter {
+    width: 25rem;
+  }
+  .buttons {
+    width: 25rem;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .player {
+    max-width: 100%;
+    height: 100vh;
+    margin: 0;
+    box-shadow: none;
+  }
+  .main_image img {
+    width: 30rem;
+    height: 30rem;
+  }
+  meter {
+    width: 35rem;
+  }
+  .buttons {
+    width: 35rem;
+  }
+}
